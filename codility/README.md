@@ -31,28 +31,31 @@ class Solution { public int[] solution(int[] A, int K); }
 
 that, given an array A consisting of N integers and an integer K, returns the array A rotated K times.
 
-'''
-For example, given
-
-    A = [3, 8, 9, 7, 6]
-    K = 3
-the function should return [9, 7, 6, 3, 8]. Three rotations were made:
-
-    [3, 8, 9, 7, 6] -> [6, 3, 8, 9, 7]
-    [6, 3, 8, 9, 7] -> [7, 6, 3, 8, 9]
-    [7, 6, 3, 8, 9] -> [9, 7, 6, 3, 8]
-For another example, given
-
-    A = [0, 0, 0]
-    K = 1
-the function should return [0, 0, 0]
-
-Given
-
-    A = [1, 2, 3, 4]
-    K = 4
-the function should return [1, 2, 3, 4]
-'''
+> 
+> For example, given
+> 
+> A = [3, 8, 9, 7, 6]
+> K = 3
+> 
+> the function should return [9, 7, 6, 3, 8]. Three rotations were made:
+> 
+> [3, 8, 9, 7, 6] -> [6, 3, 8, 9, 7]
+> [6, 3, 8, 9, 7] -> [7, 6, 3, 8, 9]
+> [7, 6, 3, 8, 9] -> [9, 7, 6, 3, 8]
+> 
+> For another example, given
+> A = [0, 0, 0]
+> K = 1
+> 
+> the function should return [0, 0, 0]
+> 
+> Given
+> 
+> A = [1, 2, 3, 4]
+> K = 4
+> 
+> the function should return [1, 2, 3, 4]
+> 
 
 Assume that:
 
@@ -64,17 +67,18 @@ In your solution, focus on correctness. The performance of your solution will no
 ## ODD Occurences in Array - Practicing Iterative Arrays
 A non-empty array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.
 
-'''
-For example, in array A such that:
-
-  A[0] = 9  A[1] = 3  A[2] = 9
-  A[3] = 3  A[4] = 9  A[5] = 7
-  A[6] = 9
-the elements at indexes 0 and 2 have value 9,
-the elements at indexes 1 and 3 have value 3,
-the elements at indexes 4 and 6 have value 9,
-the element at index 5 has value 7 and is unpaired.
-'''
+> 
+> For example, in array A such that:
+> 
+>   A[0] = 9  A[1] = 3  A[2] = 9
+>   A[3] = 3  A[4] = 9  A[5] = 7
+>   A[6] = 9
+> 
+> the elements at indexes 0 and 2 have value 9,
+> the elements at indexes 1 and 3 have value 3,
+> the elements at indexes 4 and 6 have value 9,
+> the element at index 5 has value 7 and is unpaired.
+> 
 
 Write a function:
 
@@ -82,14 +86,15 @@ class Solution { public int solution(int[] A); }
 
 that, given an array A consisting of N integers fulfilling the above conditions, returns the value of the unpaired element.
 
-'''
-For example, given array A such that:
-
-  A[0] = 9  A[1] = 3  A[2] = 9
-  A[3] = 3  A[4] = 9  A[5] = 7
-  A[6] = 9
-the function should return 7, as explained in the example above.
-'''
+> 
+> For example, given array A such that:
+> 
+>   A[0] = 9  A[1] = 3  A[2] = 9
+>   A[3] = 3  A[4] = 9  A[5] = 7
+>   A[6] = 9
+> 
+> the function should return 7, as explained in the example above.
+> 
 
 Write an efficient algorithm for the following assumptions:
 
@@ -109,18 +114,19 @@ class Solution { public int solution(int X, int Y, int D); }
 
 that, given three integers X, Y and D, returns the minimal number of jumps from position X to a position equal to or greater than Y.
 
-'''
-For example, given:
-
-  X = 10
-  Y = 85
-  D = 30
-the function should return 3, because the frog will be positioned as follows:
-
-after the first jump, at position 10 + 30 = 40
-after the second jump, at position 10 + 30 + 30 = 70
-after the third jump, at position 10 + 30 + 30 + 30 = 100
-'''
+> 
+> For example, given:
+> 
+>   X = 10
+>   Y = 85
+>   D = 30
+> 
+> the function should return 3, because the frog will be positioned as follows:
+> 
+> after the first jump, at position 10 + 30 = 40
+> after the second jump, at position 10 + 30 + 30 = 70
+> after the third jump, at position 10 + 30 + 30 + 30 = 100
+> 
 
 Write an efficient algorithm for the following assumptions:
 
@@ -139,15 +145,16 @@ class Solution { public int solution(int[] A); }
 
 that, given an array A, returns the value of the missing element.
 
-'''
-For example, given array A such that:
-
-  A[0] = 2
-  A[1] = 3
-  A[2] = 1
-  A[3] = 5
-the function should return 4, as it is the missing element.
-'''
+> 
+> For example, given array A such that:
+> 
+>   A[0] = 2
+>   A[1] = 3
+>   A[2] = 1
+>   A[3] = 5
+> 
+> the function should return 4, as it is the missing element.
+> 
 
 Write an efficient algorithm for the following assumptions:
 
@@ -165,21 +172,22 @@ The difference between the two parts is the value of: |(A[0] + A[1] + ... + A[P 
 
 In other words, it is the absolute difference between the sum of the first part and the sum of the second part.
 
-'''
-For example, consider array A such that:
-
-  A[0] = 3
-  A[1] = 1
-  A[2] = 2
-  A[3] = 4
-  A[4] = 3
-We can split this tape in four places:
-
-P = 1, difference = |3 − 10| = 7
-P = 2, difference = |4 − 9| = 5
-P = 3, difference = |6 − 7| = 1
-P = 4, difference = |10 − 3| = 7
-'''
+> 
+> For example, consider array A such that:
+> 
+>   A[0] = 3
+>   A[1] = 1
+>   A[2] = 2
+>   A[3] = 4
+>   A[4] = 3
+> 
+> We can split this tape in four places:
+> 
+> P = 1, difference = |3 − 10| = 7
+> P = 2, difference = |4 − 9| = 5
+> P = 3, difference = |6 − 7| = 1
+> P = 4, difference = |10 − 3| = 7
+> 
 
 Write a function:
 
@@ -187,16 +195,17 @@ class Solution { public int solution(int[] A); }
 
 that, given a non-empty array A of N integers, returns the minimal difference that can be achieved.
 
-'''
-For example, given:
-
-  A[0] = 3
-  A[1] = 1
-  A[2] = 2
-  A[3] = 4
-  A[4] = 3
-the function should return 1, as explained above.
-'''
+> 
+> For example, given:
+> 
+>   A[0] = 3
+>   A[1] = 1
+>   A[2] = 2
+>   A[3] = 4
+>   A[4] = 3
+> 
+> the function should return 1, as explained above.
+> 
 
 Write an efficient algorithm for the following assumptions:
 
